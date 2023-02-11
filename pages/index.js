@@ -8,8 +8,9 @@ import Name from "../components/Name";
 import Popularity from "../components/Popularity";
 
 const HeaderImageStyled = styled.div`
-  min-height: 50rem;
-  background: url('../Godfather_header.jpg') no-repeat top/cover;
+  min-height: 40vh;
+  /* min-height: 50rem; */
+  background: url('../Godfather_header.jpg') no-repeat 0 10%/cover;
   position: relative;
 
   &::before {
