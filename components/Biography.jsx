@@ -17,6 +17,8 @@ const BiographyStyled = styled.div`
         font-size: 1.3rem;
         font-weight: 300;
         line-height: 1.8rem;
+        height: 18rem;
+        overflow: auto;
     }
 
     background-color: #403b3b;

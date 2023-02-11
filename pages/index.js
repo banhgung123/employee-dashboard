@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import styled from "styled-components";
 import { useImmer } from "use-immer";
@@ -9,7 +8,6 @@ import Popularity from "../components/Popularity";
 
 const HeaderImageStyled = styled.div`
   min-height: 40vh;
-  /* min-height: 50rem; */
   background: url('../Godfather_header.jpg') no-repeat 0 10%/cover;
   position: relative;
 
@@ -29,7 +27,7 @@ const HeaderImageStyled = styled.div`
 const ContentStyled = styled.div`
   background-color: #4a4848;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 `;
 
@@ -204,7 +202,6 @@ export default function Home() {
           </div>
         </InfoStyled>
       </ContentStyled>
-      
     </div>
   )
 }
