@@ -46,9 +46,9 @@ const ListStyled = styled.div`
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 20rem;
+    width: 15rem;
     padding-top: 50%;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   .list {
