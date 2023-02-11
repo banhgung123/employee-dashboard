@@ -11,6 +11,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "immer": "^9.0.19",
+    "lodash": "^4.17.21",
     "next": "12",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.1",

@@ -136,26 +136,46 @@ export default function Home() {
     setEmployees(draft => {
       const index = draft.findIndex(item => item?.name.toLowerCase() === obj?.name.toLowerCase());
       if (index !== -1) {
-        draft[index].size = +obj?.size;
-        if (+obj?.size < 20) {
+        draft[index].size = +obj?.size;console.log(+obj.size)
+        if (+obj?.size < 10) {
           if (draft[index].popularity === 5) draft[index].fontSize = '1.6rem';
           if (draft[index].popularity === 2) draft[index].fontSize = '1.2rem';
         }
-        if (+obj?.size < 40) {
-          if (draft[index].popularity === 5) draft[index].fontSize = '3.2rem';
+        if (+obj?.size >= 10 && +obj?.size < 20) {
+          if (draft[index].popularity === 5) draft[index].fontSize = '2.1rem';
+          if (draft[index].popularity === 2) draft[index].fontSize = '1.4rem';
+        }
+        if (+obj?.size >= 20 && +obj?.size < 30) {
+          if (draft[index].popularity === 5) draft[index].fontSize = '2.6rem';
+          if (draft[index].popularity === 2) draft[index].fontSize = '1.6rem';
+        }
+        if (+obj?.size >= 30 && +obj?.size < 40) {
+          if (draft[index].popularity === 5) draft[index].fontSize = '3.1rem';
+          if (draft[index].popularity === 2) draft[index].fontSize = '1.8rem';
+        }
+        if (+obj?.size >= 40 && +obj?.size < 50) {
+          if (draft[index].popularity === 5) draft[index].fontSize = '3.6rem';
+          if (draft[index].popularity === 2) draft[index].fontSize = '2rem';
+        }
+        if (+obj?.size >= 50 && +obj?.size < 60) {
+          if (draft[index].popularity === 5) draft[index].fontSize = '4.1rem';
+          if (draft[index].popularity === 2) draft[index].fontSize = '2.2rem';
+        }
+        if (+obj?.size >= 60 && +obj?.size < 70) {
+          if (draft[index].popularity === 5) draft[index].fontSize = '4.6rem';
           if (draft[index].popularity === 2) draft[index].fontSize = '2.4rem';
         }
-        if (+obj?.size < 60) {
-          if (draft[index].popularity === 5) draft[index].fontSize = '4.8rem';
-          if (draft[index].popularity === 2) draft[index].fontSize = '3.6rem';
+        if (+obj?.size >= 70 && +obj?.size < 80) {
+          if (draft[index].popularity === 5) draft[index].fontSize = '5.1rem';
+          if (draft[index].popularity === 2) draft[index].fontSize = '2.6rem';
         }
-        if (+obj?.size < 80) {
-          if (draft[index].popularity === 5) draft[index].fontSize = '6.4rem';
-          if (draft[index].popularity === 2) draft[index].fontSize = '4.8rem';
+        if (+obj?.size >= 80 && +obj?.size < 90) {
+          if (draft[index].popularity === 5) draft[index].fontSize = '5.6rem';
+          if (draft[index].popularity === 2) draft[index].fontSize = '2.8rem';
         }
-        if (+obj?.size > 79) {
-          if (draft[index].popularity === 5) draft[index].fontSize = '8rem';
-          if (draft[index].popularity === 2) draft[index].fontSize = '6rem';
+        if (+obj?.size >= 90) {
+          if (draft[index].popularity === 5) draft[index].fontSize = '6.1rem';
+          if (draft[index].popularity === 2) draft[index].fontSize = '3rem';
         }
       }
     });

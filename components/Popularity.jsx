@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Form from 'react-bootstrap/Form';
 import styled from 'styled-components';
+import {debounce, throttle} from 'lodash';
 
 Popularity.propTypes = {
     
@@ -99,7 +100,6 @@ const PopularityStyled = styled.div`
         cursor: pointer;
     }
 `;
-
 
 function Popularity({name, size, onChangeFontSize}) {
 
