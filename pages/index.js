@@ -136,7 +136,7 @@ export default function Home() {
     setEmployees(draft => {
       const index = draft.findIndex(item => item?.name.toLowerCase() === obj?.name.toLowerCase());
       if (index !== -1) {
-        draft[index].size = +obj?.size;console.log(+obj.size)
+        draft[index].size = +obj?.size;
         if (+obj?.size < 10) {
           if (draft[index].popularity === 5) draft[index].fontSize = '1.6rem';
           if (draft[index].popularity === 2) draft[index].fontSize = '1.2rem';
