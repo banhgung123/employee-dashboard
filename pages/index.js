@@ -37,7 +37,8 @@ const ListStyled = styled.div`
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 35rem;
-  min-height: 100vh;
+  height: 100vh;
+    overflow: auto;
 
   .logo {
     background: url('../the-godfather.svg') no-repeat center/contain;

@@ -110,7 +110,6 @@ function Popularity({name, size, onChangeFontSize}) {
                 value={size}
                 onChange={(val) => {
                     onChangeFontSize({size: val.target.value, name});
-                    setSizeValue(val.target.value);
                 }}
             />
         </PopularityStyled>
