@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Form from 'react-bootstrap/Form';
 import styled from 'styled-components';
-import { useImmer } from 'use-immer';
 
 Popularity.propTypes = {
     
@@ -102,8 +101,7 @@ const PopularityStyled = styled.div`
 `;
 
 
-function Popularity({name, size, onChangeFontSize}) {console.log(size)
-    const [sizeValue , setSizeValue] = useImmer(() => size);
+function Popularity({name, size, onChangeFontSize}) {
 
     return (
         <PopularityStyled>
@@ -113,7 +111,8 @@ function Popularity({name, size, onChangeFontSize}) {console.log(size)
                 onChange={(val) => {
                     onChangeFontSize({size: val.target.value, name});
                     setSizeValue(val.target.value);
-            }}/>
+                }}
+            />
         </PopularityStyled>
     );
 }
